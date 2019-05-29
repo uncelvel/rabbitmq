@@ -51,7 +51,7 @@ setsebool -P nis_enabled 1
 ```sh 
 rabbitmq-plugins enable rabbitmq_management
 chown -R rabbitmq:rabbitmq /var/lib/rabbitmq/
-rabbitmqctl add_user admin minhkma
+rabbitmqctl add_user admin passla123
 rabbitmqctl set_user_tags admin administrator
 rabbitmqctl add_vhost admin_vhost
 rabbitmqctl set_permissions -p admin_vhost admin ".*" ".*" ".*"
